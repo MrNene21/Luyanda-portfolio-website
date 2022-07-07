@@ -39,9 +39,16 @@
     font-weight: 500;
     margin-left: 2.5rem;
     font-size: 1.6rem;
+    transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
     color: rgb(215, 14, 14);
+}
+/*menu button styling*/
+.menu-btn{
+    font-size: 2.9rem;
+    cursor: pointer;
+    display: none;
 }
 
 /* home section styling */
@@ -84,4 +91,48 @@
     border-color: rgb(196, 38, 38);
     border-radius: 2.1rem;
     margin-top: 1.6rem;
+}
+
+/*responsiveness - start*/
+@media (max-width: 94.7rem){
+    .max-width{
+        padding: 0 5rem;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: rgb(228, 228, 228);
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 8rem;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left:0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu a{
+        display: inline-block;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+    }
+
+    .home .home-content .text-2{
+        font-size: 7.0rem;
+    }
+    .home .home-content .text-3{
+        font-size: 3rem;
+    }
+    
 }
