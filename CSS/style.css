@@ -125,7 +125,8 @@ section{
     height: 0.3rem;
     transform: translateX(-50%);
 }
-.about .about-content{
+.about .about-content,
+.skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -134,7 +135,7 @@ section{
 .about .about-content .left{
     width: 45%;
 }
-.about .about-content .left img{
+.about .about-content .left img , .skills .skills-content .left img{
     height: 40rem;
     width: 40rem;
     object-fit: cover;
@@ -150,7 +151,7 @@ section{
     margin-bottom: 1rem;
 
 }
-.about .about-content .right p{
+.about .about-content .right p, .skills .skills-content .left p{
     text-align: justify;
     font-size: 1.6rem;
     color: black;
@@ -158,17 +159,32 @@ section{
 }
 
 .skills{
-    background: lightgray;
+    background: rgb(30, 29, 29);
 }
-.skills .skills-content .info{ 
-    font-size: 2.8rem;
+.skills .title{
+    color: #fff;
+}
+.skills .skills-content .column{
+    width: calc(50% - 3rem);
+}
+.skills .skills-content .left .text{
+    font-size: 2rem;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
-.skills .skills-content .bars{
+.skills .skills-content .left p{
+    color: #fff;
+}
+.skills .skills-content .right .info{ 
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+.skills .skills-content .right .bars{
     margin-bottom: 1.5rem;
 }
-.skills .skills-content .line{
-    height: 0.8rem;
+.skills .skills-content .right .line{
+    height: 0.5rem;
     width: 100%;
     background: lightslategray;
     position: relative;
@@ -231,7 +247,8 @@ section{
 }
 
 @media (max-width: 110.4rem){
-    .about .about-content .left img{
+    .about .about-content .left img,
+    .skills .skills-content .left img{
         height: 35rem;
         width: 35rem;
     }
@@ -293,6 +310,10 @@ section{
     }
     .about .about-content .right{
         flex: 100%;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 3.5rem;
     }
 }
 
