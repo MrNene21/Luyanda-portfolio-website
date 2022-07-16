@@ -129,7 +129,8 @@ section{
     transform: translateX(-50%);
 }
 .about .about-content,
-.skills .skills-content{
+.skills .skills-content,
+.projects .projects-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -139,7 +140,8 @@ section{
     width: 45%;
 }
 .about .about-content .left img , 
-.skills .skills-content .left img{
+.skills .skills-content .left img,
+.projects .projects-content .work img{
     height: 40rem;
     width: 40rem;
     object-fit: cover;
@@ -155,7 +157,8 @@ section{
     margin-bottom: 1rem;
 
 }
-.about .about-content .right p, .skills .skills-content .left p{
+.about .about-content .right p, 
+.skills .skills-content .left p{
     text-align: justify;
     font-size: 1.6rem;
     color: black;
@@ -222,8 +225,11 @@ section{
     width: 65%;
 }
 
-
-
+.projects-content .work{
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
 
 
 
