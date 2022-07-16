@@ -102,10 +102,12 @@
 section{
     padding: 10rem 0;
 }
-.about, .skills {
+.about, .skills, .projects {
     font-family: 'Poppins', sans-serif;
 }
-.about .title , .skills .title{
+.about .title , 
+.skills .title,
+.projects .title{
     position: relative;
     font-size: 4rem;
     font-weight: 500;
@@ -115,7 +117,8 @@ section{
     padding-bottom: 2rem;
 }
 .skills .title::before,
-.about .title::before{
+.about .title::before,
+.projects .title::before{
     content: "";
     position: absolute;
     bottom: 0rem;
@@ -135,7 +138,8 @@ section{
 .about .about-content .left{
     width: 45%;
 }
-.about .about-content .left img , .skills .skills-content .left img{
+.about .about-content .left img , 
+.skills .skills-content .left img{
     height: 40rem;
     width: 40rem;
     object-fit: cover;
