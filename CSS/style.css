@@ -21,6 +21,7 @@
     z-index: 999;
     background: #fff;
     font-family: 'Ubuntu', sans-serif;
+    box-shadow: 0rem 0.5rem 0.8rem #888888;
 }
 .navbar .logo{
     padding-top: 0.9rem;
@@ -54,12 +55,13 @@
 
 /* home section styling */
 .home{
+    margin-top: 8rem;
     display: flex;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("../ASSETS/IMAGES/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     min-width: 50rem;
     font-family: 'Ubuntu', sans-serif;
     justify-content: center;
@@ -104,6 +106,7 @@
 .home .home-content button:hover{
     transition: color 0.2s ease-in;
     color: #ff004f;
+    width: 14.7rem;
 }
 
 /*about section styling*/
@@ -172,7 +175,22 @@ section{
     color: black;
     font-weight: 100;
 }
-
+.about .about-content button{
+    background-color: rgb(30, 29, 29);
+    color: #fff;
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1.6rem;
+    box-shadow: 0.5rem 0.5rem 0.8rem #888888;
+}
+.about .about-content button:hover{
+    transition: color 0.2s ease-in;
+    color: rgb(196, 38, 38);
+    font-weight: bold;
+    width: 14.7rem;
+}
 .skills{
     background: rgb(30, 29, 29);
 }
