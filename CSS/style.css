@@ -118,7 +118,8 @@ section{
 }
 .about .title , 
 .skills .title,
-.projects .title{
+.projects .title,
+.hobbies .title{
     position: relative;
     font-size: 4rem;
     font-weight: 500;
@@ -129,7 +130,8 @@ section{
 }
 .skills .title::before,
 .about .title::before,
-.projects .title::before{
+.projects .title::before,
+.hobbies .title::before{
     content: "";
     position: absolute;
     bottom: 0rem;
@@ -141,7 +143,8 @@ section{
 }
 .about .about-content,
 .skills .skills-content,
-.projects .projects-content{
+.projects .projects-content,
+.hobbies .hobbies-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -293,6 +296,13 @@ section{
     height: 5.5rem;
     border-radius: 50%;
     text-align: center;
+}
+
+.hobbies{
+    background: rgb(30, 29, 29);
+}
+.hobbies .title{
+    color: #fff;
 }
 
 
